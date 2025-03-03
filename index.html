@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari F1 Takımı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #ff2800;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function yeniSekmeyeGit(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ferrari F1 Takımı</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#javascript:void(0);" onclick="yeniSekmeyeGit('https://en-m-wikipedia-org.translate.goog/wiki/Scuderia_Ferrari?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc')">Tarihçe</a></li>
+            <li><a href="javascript:void(0);" onclick="yeniSekmeyeGit('https://tr.wikipedia.org/wiki/Scuderia_Ferrari#Formula_1_pilotlar_şampiyonları')">Pilotlar</a></li>
+            <li><a href="javascript:void(0);" onclick="yeniSekmeyeGit('https://tr.wikipedia.org/wiki/Scuderia_Ferrari#Formula_1_sonuçları')">Başarılar</a></li>
+        </ul>
+    </nav>
+    <section id="history">
+        <h2>Tarihçe</h2>
+        <p>Ferrari, 1929 yılında Enzo Ferrari tarafından kurulmuştur. F1 tarihinin en eski ve en başarılı takımlarından biridir.</p>
+        <p>İlk olarak 1950 yılında Formula 1'e katılmıştır ve o zamandan beri yarışların vazgeçilmez bir parçası olmuştur. Ferrari, güçlü motorları ve dayanıklılığı ile ünlüdür.</p>
+    </section>
+    <section id="drivers">
+        <h2>Pilotlar</h2>
+        <p>2025 sezonu pilotları Charles Leclerc ve Lewis Hamilton'dur.</p>
+        <p>Charles Leclerc, genç yaşına rağmen birçok başarıya imza atmış bir pilot. Lewis Hamilton'un ise Ferrariye gelmesi büyük bir olay yarattı. 7 kez dünya şampiyonu pilotun Ferrariye neler katacağı merak konusu.</p>
+    </section>
+    <section id="achievements">
+        <h2>Başarılar</h2>
+        <p>Ferrari, F1 tarihinde birçok şampiyonluk kazanmıştır. Michael Schumacher ile 2000-2004 yılları arasında büyük başarılar elde etmiştir.</p>
+        <p>Bugüne kadar 16 Takımlar Şampiyonası ve 15 Sürücüler Şampiyonası kazanmıştır, bu da Ferrari'yi en başarılı F1 takımlarından biri yapmaktadır.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ferrari F1 Takımı</p>
+    </footer>
+</body>
+</html>
