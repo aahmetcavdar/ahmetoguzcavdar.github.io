@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari F1 Takımı</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
+          color: #ffffff; /* Beyaz renk */
+          padding: 20px;
+          background: linear-gradient(to bottom, red 50%, black 50%);
+      }
+      h1 {
+          color: rgb(247, 247, 247);
+          text-align: center;
+      }
+      .logo {
+          display: block;
+          margin: 0 auto;
+          width: 200px;
+      }
+      h2 {
+          color: rgb(252, 252, 252);
+          text-align: center;
+      }
+      a {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+      }
+      a:hover {
+          text-decoration: underline;
+      }
+      .drivers {
+          display: flex;
+          gap: 20px;
+          margin: 20px auto;
+          flex-wrap: wrap;
+          justify-content: center;
+          background-color: black;
+          padding: 20px;
+          border-radius: 10px;
+      }
+      .driver {
+          text-align: center;
+          max-width: 200px;
+      }
+      .driver-img {
+          width: 100%;
+          border-radius: 10px;
+          cursor: pointer;
+      }
+      .buttons-container {
+          text-align: center;
+          margin: 20px;
+      }
+      .btn {
+          background-color: #d32f2f;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          margin: 5px;
+          cursor: pointer;
+      }
+      .btn:hover {
+          background-color: #b71c1c;
+      }
+      .car-container {
+          margin: 20px auto;
+          text-align: center;
+      }
+      .car-img {
+          width: 80%;
+          border-radius: 10px;
+      }
+  </style>
+</head>
+<body>
+
+  <h1>Scuderia Ferrari</h1>
+
+  <img src="images/ferrari_logo.png" alt="Ferrari Logo" class="logo">
+
+  <p>
+    Scuderia Ferrari HP, İtalyan otomobil üreticisi Ferrari'nin Formula 1 yarış araçlarının tasarımı, üretimi ve yarış yönetimi için ayrılmış bölümü. Logosu nedeniyle "Şahlanan At" olarak da hitap edilir. Scuderia Ferrari, en çok başarı elde etmiş ve halen faaliyet gösteren en eski Formula 1 takımıdır. Şu ana kadar çeşitli pilotlar ile 16 kez dünya şampiyonluğu elde etmiştir.
+  </p>
+
+  <h2>Ferrari Pilotları (2025)</h2>
+
+  <div class="drivers">
+    <div class="driver">
+      <a href="https://tr.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">
+        <img src="images/lewis_hamilton.jpg" alt="Lewis Hamilton" class="driver-img">
+      </a>
+      <p><a href="https://tr.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">Lewis Hamilton</a></p>
+    </div>
+
+    <div class="driver">
+      <a href="https://tr.wikipedia.org/wiki/Charles_Leclerc" target="_blank">
+        <img src="images/charles_leclerc.jpg" alt="Charles Leclerc" class="driver-img">
+      </a>
+      <p><a href="https://tr.wikipedia.org/wiki/Charles_Leclerc" target="_blank">Charles Leclerc</a></p>
+    </div>
+  </div>
+
+  <h2>Ferrari F1 Aracı</h2>
+  <div class="car-container">
+    <img src="images/sf-25.png" alt="Ferrari F1 Aracı" class="car-img">
+    <p>En hızlı ve zarif F1 araçlarından biri olan SF-25 aracı, teknolojinin zirvesini temsil ediyor.</p>
+  </div>
+
+  <h2>Başarıları</h2>
+  <div class="buttons-container">
+      <a href="https://tr.wikipedia.org/wiki/Scuderia_Ferrari#Formula_1_sonuçları" target="_blank">
+          <button class="btn">Formula 1 Sonuçları</button>
+      </a>
+      <a href="https://tr.wikipedia.org/wiki/Scuderia_Ferrari#Formula_1_pilotlar_şampiyonları" target="_blank">
+          <button class="btn">15 Pilotlar Şampiyonluğu</button>
+      </a>
+          <button class="btn">240+ Yarış Galibiyeti</button>
+      </a>
+  </div>
+
+  <h2>Takım Hakkında Daha Fazla Bilgi</h2>
+  <p>Detaylar için <a href="https://www.ferrari.com/en-EN/formula1" target="_blank">resmi Ferrari F1 sayfasına</a> göz atabilirsin.</p>
+
+</body>
+</html>
