@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+  
+
+}
+
+/* Navbar */
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color:#007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.champion-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+.champion img {
+    width: 60px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.champion {
+    position: relative; /* Baloncuk konumlandırması için */
+}
+
+.champion-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px; /* Yuvarlak baloncuk efekti */
+    font-size: 14px;
+    display: none;
+    white-space: nowrap;
+    top: -35px; /* Simgenin hemen üstüne çıksın */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+}
+
+/* Baloncuğun altına küçük üçgen ekleyelim */
+.champion-info::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+.champion:hover .champion-info {
+    display: block; /* Üzerine gelindiğinde görünür olacak */
+}
+
+
+.lol-map-container img {
+    width: 100%;
+    max-width: 700px; /* Daha geniş görünmesi için */
+    display: block;
+    margin: auto;
+}
+
+
+
+lol-map-container {
+    position: relative;
+    text-align: center;
+}
+
+.map-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.map-info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Varsayılan olarak görünmez */
+    white-space: nowrap;
+}
+.map-marker:hover .map-info{
+    transform: scale(1.3);
+    background-color: black;
+   display: block; /* Hover ile görünür olacak */
+    top: -25px;
+    left: 30px;
+
+}
+
+/* Haritadaki konumlar */
+.top-lane { top: 38%; left: 33%; }
+.jungle { top: 55%; left: 37%; }
+.mid-lane { top: 67%; left: 45%; }
+.bot-lane { top: 93%; left: 60%; }
+/* Orman canavarlarının konumu */
+.red-buff { top: 80%; left: 49%; }
+.blue-buff { top: 60%; left: 37%; }
+.rift-herald { top: 48%; left: 40%; }
+.dragon { top: 77%; left: 56%; }
+.baron { top: 50%; left: 42%; }
+
+
+
+
+#map-info {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #222;
+    border-radius: 8px;
+       opacity: 0;
+}
+.site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative; /* Sabit değil, sayfayla birlikte hareket edecek */
+    bottom: 0;
+}
+body {
+    min-height: 100vh; /* Sayfanın minimum yüksekliği tam ekran olacak */
+}
